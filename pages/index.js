@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Box, Container } from "@chakra-ui/react";
 import Section from "./components/Section";
 import NavSection from "./components/NavSection";
 import Hero from "./components/Hero";
+import Intro from "./components/Intro";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +20,12 @@ export default function Home() {
       <main className={styles.main}>
         <Section>
           <NavSection />
+        </Section>
+        <Section>
+          <Hero />
+        </Section>
+        <Section>
+          <Intro />
         </Section>
         <Section>
           <Hero />
