@@ -10,11 +10,35 @@ export default function NavSection() {
         <SunIcon boxSize="6" m="2" />
         <NavLink main>William Schutte</NavLink>
         <NavLink>About</NavLink>
+        <Box
+          w="1px"
+          h="1.75em"
+          mx="6"
+          bg="gray.300"
+          borderRadius="4"
+          alignSelf="center"
+        />
         <NavLink>Work</NavLink>
+        <Box
+          w="1px"
+          h="1.75em"
+          mx="6"
+          bg="gray.300"
+          borderRadius="4"
+          alignSelf="center"
+        />
         <NavLink>Projects</NavLink>
       </Flex>
       <Flex py="4">
         <NavLink>Resume</NavLink>
+        <Box
+          w="1px"
+          h="1.75em"
+          mx="6"
+          bg="gray.300"
+          borderRadius="4"
+          alignSelf="center"
+        />
         <NavLink>LinkedIn</NavLink>
       </Flex>
     </Flex>

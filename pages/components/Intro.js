@@ -33,11 +33,11 @@ export default function Intro() {
       <Box
         bg="linear-gradient(90deg, rgba(131, 58, 180, 0.7) 2.16%, rgba(253, 29, 29, 0.63) 132.3%),#D693FF;"
         position="absolute"
-        top="1200px"
+        top="1100px"
         h="700px"
         w="130%"
         transform={"auto"}
-        rotate="16deg"
+        rotate="12deg"
         zIndex={-1}
       ></Box>
       <Box>

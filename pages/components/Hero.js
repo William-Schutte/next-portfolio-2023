@@ -92,6 +92,7 @@ export default function Hero() {
           translateX="-30px"
           translateY="40px"
           rotate="8deg"
+          bgSize="cover"
           boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
         />
         <Box

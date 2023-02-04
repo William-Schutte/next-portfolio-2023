@@ -1,15 +1,39 @@
 import { Box, Link, Text } from "@chakra-ui/react";
+import { useState } from "react";
 
 export default function NavLink({ children, location, main = false }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <Link mr={main ? 8 : 6} display="flex" alignItems="center">
+    <Link
+      mr={main ? 8 : 0}
+      display="flex"
+      flexDir="column"
+      alignItems="center"
+      transition="all .2s"
+      top={main ? 1 : 2}
+      position="relative"
+      _hover={{ textDecoration: "none" }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Text
         display="inline"
-        fontSize="1.25em"
-        fontWeight={main ? "bold" : "regular"}
+        fontSize={main ? "1.25em" : "1em"}
+        fontWeight="bold"
       >
         {children}
       </Text>
+      {!main && (
+        <Box
+          w={isHovered ? "100%" : 0}
+          h="3px"
+          bg="gray.700"
+          transition=".3s ease"
+          transitionDelay=".1s"
+          alignSelf={"flex-start"}
+        />
+      )}
     </Link>
   );
 }
