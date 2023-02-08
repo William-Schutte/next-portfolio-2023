@@ -1,10 +1,14 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+
 import Section from "./components/Section";
 import NavSection from "./components/NavSection";
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
+import Experience from "./components/Experience";
+import ExperienceItem1 from "./components/ExperienceItem1";
+import ExperienceItem2 from "./components/ExperienceItem2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +32,9 @@ export default function Home() {
           <Intro />
         </Section>
         <Section>
-          <Hero />
+          <Experience />
+          <ExperienceItem1 />
+          <ExperienceItem2 />
         </Section>
       </main>
     </>

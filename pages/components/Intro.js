@@ -15,8 +15,8 @@ export default function Intro() {
     const position = window.pageYOffset;
 
     // 0 - 400 range, interpolate from 80 to 0
-    const positionInRange = Math.min(position, 320);
-    const interpVal = 80 - (80 * positionInRange) / 320;
+    const positionInRange = Math.min(position, 800);
+    const interpVal = 80 - (80 * positionInRange) / 800;
     setScrollPosition(interpVal);
   };
 
