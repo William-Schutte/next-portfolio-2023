@@ -18,7 +18,7 @@ export default function ExperienceItem1() {
       <Box maxW="560px" my="8" py="4">
         <Text textStyle="lgHeading">Cove Tool</Text>
         <Text textStyle="lgHeading" fontSize="2xl" mb="4">
-          Full Stack Software Engineer
+          Full Stack Software Engineer (2022 - Present)
         </Text>
 
         <Text
@@ -32,7 +32,7 @@ export default function ExperienceItem1() {
           bgSize="200% 100%"
           animation={`${spin} 6s infinite linear`}
         >
-          React, TypeScript, Javascript, Django, Python, Docker, AWS
+          React, TypeScript, JavaScript, Django, Python, Docker, AWS
         </Text>
 
         <Text textStyle="subHeading" mb="4" textAlign="justify">

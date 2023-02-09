@@ -9,7 +9,7 @@ export default function NavSection() {
       <Flex py="4" mr="auto">
         <SunIcon boxSize="6" m="2" />
         <NavLink main>William Schutte</NavLink>
-        <NavLink>About</NavLink>
+        <NavLink>Story</NavLink>
         <Box
           w="1px"
           h="1.75em"

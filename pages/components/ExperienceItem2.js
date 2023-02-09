@@ -10,7 +10,7 @@ export default function ExperienceItem2() {
       <Box maxW="560px" my="8" py="4">
         <Text textStyle="lgHeading">Conifer Point</Text>
         <Text textStyle="lgHeading" fontSize="2xl" mb="4">
-          Javascript Developer
+          JavaScript Developer (2021 - 2022)
         </Text>
 
         <Text
@@ -24,21 +24,17 @@ export default function ExperienceItem2() {
           bgSize="200% 100%"
           animation={`${spin} 6s infinite linear`}
         >
-          React, Javascript, 3Dmol.js, Django, Python, MaterialUI
+          React, JavaScript, 3Dmol.js, Django, Python, MaterialUI
         </Text>
-
         <Text textStyle="subHeading" mb="4" textAlign="justify">
-          Architecture is an art, so why is engineering software so ugly?
-          Software should be beautiful and intuitive regardless of complexity or
-          target audience. That's why I've loved my time at Cove Tool, leading
-          teams of engineers, mentoring junior devs, and shepherding products
-          and features from design to delivery at this fast-paced, mid-sized,
-          Series B, climate tech startup. And in the process, we've even reduced
-          more carbon emissions than Tesla!
+          At Conifer Point, a small startup in the computational chemistry
+          field, I was able to leverage my biochemistry background to develop
+          and optimize 3D drug discovery tools and personally help labs
+          searching for new active drug candidates.
         </Text>
         <Text textStyle="subHeading" mb="4" fontStyle="italic">
-          TLDR: "Rockstar developer and mentor helps make the world a better
-          place"
+          TLDR: "Recursive compound decomposition, intramolecular bond rotation,
+          and Lennard-Jones potential simulation? No problem."
         </Text>
       </Box>
       <Box
