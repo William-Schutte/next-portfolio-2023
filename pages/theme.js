@@ -4,6 +4,7 @@ export const theme = extendTheme({
   config: {
     initialColorMode: "light",
     useSystemColorMode: true,
+    disableTransitionOnChange: false,
   },
   textStyles: {
     lgHeading: {
@@ -15,15 +16,7 @@ export const theme = extendTheme({
       fontSize: "xl",
       lineHeight: "1.4",
       fontWeight: "400",
-      letterSpacing: 1.1,
-    },
-    styles: {
-      global: {
-        body: {
-          transitionProperty: "all",
-          transitionDuration: "1s",
-        },
-      },
+      letterSpacing: 1,
     },
   },
 });

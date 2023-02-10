@@ -6,7 +6,7 @@ to {background-position: 200% 0;}
 
 export default function ExperienceItem2() {
   return (
-    <Flex my="16" px="4" justifyContent="space-between">
+    <Flex mt="12" mb="32" px="4" justifyContent="space-between">
       <Box maxW="560px" my="8" py="4">
         <Text textStyle="lgHeading">Conifer Point</Text>
         <Text textStyle="lgHeading" fontSize="2xl" mb="4">
