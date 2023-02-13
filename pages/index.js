@@ -10,6 +10,8 @@ import Experience from "./components/Experience";
 import ExperienceItem1 from "./components/ExperienceItem1";
 import ExperienceItem2 from "./components/ExperienceItem2";
 import Projects from "./components/Projects";
+import ExperienceItem3 from "./components/ExperienceItem3";
+import ExperienceItem4 from "./components/ExperienceItem4";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +38,8 @@ export default function Home() {
           <Experience />
           <ExperienceItem1 />
           <ExperienceItem2 />
+          <ExperienceItem3 />
+          <ExperienceItem4 />
         </Section>
         <Section background>
           <Projects />
