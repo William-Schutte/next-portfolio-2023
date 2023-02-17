@@ -9,9 +9,9 @@ import Intro from "./components/Intro";
 import Experience from "./components/Experience";
 import ExperienceItem1 from "./components/ExperienceItem1";
 import ExperienceItem2 from "./components/ExperienceItem2";
-import Projects from "./components/Projects";
 import ExperienceItem3 from "./components/ExperienceItem3";
 import ExperienceItem4 from "./components/ExperienceItem4";
+import Contact from "./components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +42,7 @@ export default function Home() {
           <ExperienceItem4 />
         </Section>
         <Section background>
-          <Projects />
+          <Contact />
         </Section>
       </main>
     </>
