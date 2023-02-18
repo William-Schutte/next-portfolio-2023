@@ -1,4 +1,12 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Image as ChakraImage,
+  Text,
+  keyframes,
+} from "@chakra-ui/react";
+import Image from "next/image";
 
 const userImageUrls = [
   "https://randomuser.me/api/portraits/women/0.jpg",
@@ -14,7 +22,20 @@ const userImageUrls = [
   "https://randomuser.me/api/portraits/men/12.jpg",
 ];
 
+const translateX = keyframes`
+  from {transform: translate(-105%, 0%)}
+  to {transform: translate(0%, 0%);}
+`;
+
+const translateXRev = keyframes`
+  from {transform: translate(0%, 0%)}
+  to {transform: translate(-105%, 0%);}
+`;
+
 export default function Hero() {
+  const translateAnimate = `${translateX} infinite 8s linear`;
+  const translateAnimateRev = `${translateXRev} infinite 10s linear`;
+
   return (
     <Flex my="24" px="4" justifyContent="space-between">
       <Box>
@@ -61,7 +82,7 @@ export default function Hero() {
         <Flex>
           {userImageUrls.map((url, index) => (
             <Box w="7" zIndex={10 - index}>
-              <Image
+              <ChakraImage
                 src={url}
                 borderRadius="50"
                 border="4px solid white"
@@ -75,38 +96,215 @@ export default function Hero() {
           Literally over 300 LinkedIn connections, how could he not be great?
         </Text>
       </Box>
-      <Box
-        w="360px"
-        h="260px"
+      <Flex
+        w="400px"
+        h="300px"
+        flexDir="column"
+        overflow="hidden"
         mx="6"
         mt="12"
+        p="6"
         borderRadius="2xl"
         bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
       >
-        <Box
-          w="300px"
-          h="140px"
-          borderRadius="2xl"
-          bg="gray.700"
-          transform="auto"
-          translateX="-30px"
-          translateY="40px"
-          rotate="8deg"
-          bgSize="cover"
-          boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
-        />
-        <Box
-          w="300px"
-          h="200px"
-          borderRadius="2xl"
-          bg="gray.600"
-          transform="auto"
-          translateX="110px"
-          translateY="-40px"
-          rotate="-8deg"
-          boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
-        />
-      </Box>
+        <Flex
+          animation={translateAnimate}
+          w="100%"
+          h="50%"
+          mb="4"
+          position="relative"
+        >
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.700"
+            position="absolute"
+            left="0%"
+            transform="auto"
+            // translateX="-30px"
+            // translateY="40px"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-react.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.200"
+            position="absolute"
+            left="35%"
+            transform="auto"
+            // translateX="110px"
+            // translateY="-40px"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-ts.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.600"
+            position="absolute"
+            left="70%"
+            transform="auto"
+            // translateX="110px"
+            // translateY="-40px"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-js.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.700"
+            position="absolute"
+            left="105%"
+            transform="auto"
+            // translateX="-30px"
+            // translateY="40px"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-react.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.200"
+            position="absolute"
+            left="140%"
+            transform="auto"
+            // translateX="110px"
+            // translateY="-40px"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-ts.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.600"
+            position="absolute"
+            left="175%"
+            transform="auto"
+            // translateX="110px"
+            // translateY="-40px"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-js.svg" width={100} height={100} />
+          </Box>
+        </Flex>
+
+        <Flex
+          animation={translateAnimateRev}
+          w="100%"
+          position="relative"
+          bg="black"
+        >
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.200"
+            position="absolute"
+            left="0%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-python.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.200"
+            position="absolute"
+            left="35%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-ts.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.600"
+            position="absolute"
+            left="70%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-js.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.200"
+            position="absolute"
+            left="105%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-python.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.200"
+            position="absolute"
+            left="140%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-ts.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.600"
+            position="absolute"
+            left="175%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-js.svg" width={100} height={100} />
+          </Box>
+        </Flex>
+        {/* <Image src="/icon-python.svg" width={100} height={100} /> */}
+      </Flex>
     </Flex>
   );
 }
