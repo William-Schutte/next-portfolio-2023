@@ -1,9 +1,10 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
+import ExperienceIcons from "./ExperienceIcons";
 
 export default function Experience() {
   return (
-    <Flex my="24" px="4" justifyContent="space-between">
-      <Box>
+    <Flex mt="24" px="4" justifyContent="space-between">
+      <Box w="100%">
         <Text textStyle="lgHeading" fontSize="6xl">
           Full
         </Text>
@@ -38,6 +39,7 @@ export default function Experience() {
             and overly colorful presentation.
           </Text>
         </Box>
+        <ExperienceIcons />
       </Box>
     </Flex>
   );

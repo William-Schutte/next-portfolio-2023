@@ -97,7 +97,7 @@ export default function Hero() {
         </Text>
       </Box>
       <Flex
-        w="400px"
+        w="460px"
         h="300px"
         flexDir="column"
         overflow="hidden"
