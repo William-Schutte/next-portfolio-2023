@@ -23,18 +23,18 @@ const userImageUrls = [
 ];
 
 const translateX = keyframes`
-  from {transform: translate(-105%, 0%)}
+  from {transform: translate(-133%, 0%)}
   to {transform: translate(0%, 0%);}
 `;
 
 const translateXRev = keyframes`
   from {transform: translate(0%, 0%)}
-  to {transform: translate(-105%, 0%);}
+  to {transform: translate(-133%, 0%);}
 `;
 
 export default function Hero() {
-  const translateAnimate = `${translateX} infinite 8s linear`;
-  const translateAnimateRev = `${translateXRev} infinite 10s linear`;
+  const translateAnimate = `${translateX} infinite 12s linear`;
+  const translateAnimateRev = `${translateXRev} infinite 15s linear`;
 
   return (
     <Flex my="24" px="4" justifyContent="space-between">
@@ -123,8 +123,6 @@ export default function Hero() {
             position="absolute"
             left="0%"
             transform="auto"
-            // translateX="-30px"
-            // translateY="40px"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
@@ -137,10 +135,8 @@ export default function Hero() {
             borderRadius="2xl"
             bg="gray.200"
             position="absolute"
-            left="35%"
+            left="33%"
             transform="auto"
-            // translateX="110px"
-            // translateY="-40px"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
@@ -151,12 +147,24 @@ export default function Hero() {
             h="100px"
             p="2"
             borderRadius="2xl"
+            bg="gray.700"
+            position="absolute"
+            left="67%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-chakra.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
             bg="gray.600"
             position="absolute"
-            left="70%"
+            left="100%"
             transform="auto"
-            // translateX="110px"
-            // translateY="-40px"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
@@ -169,10 +177,8 @@ export default function Hero() {
             borderRadius="2xl"
             bg="gray.700"
             position="absolute"
-            left="105%"
+            left="133%"
             transform="auto"
-            // translateX="-30px"
-            // translateY="40px"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
@@ -185,10 +191,8 @@ export default function Hero() {
             borderRadius="2xl"
             bg="gray.200"
             position="absolute"
-            left="140%"
+            left="166%"
             transform="auto"
-            // translateX="110px"
-            // translateY="-40px"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
@@ -199,12 +203,24 @@ export default function Hero() {
             h="100px"
             p="2"
             borderRadius="2xl"
+            bg="gray.700"
+            position="absolute"
+            left="200%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-chakra.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
             bg="gray.600"
             position="absolute"
-            left="175%"
+            left="233%"
             transform="auto"
-            // translateX="110px"
-            // translateY="-40px"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
@@ -223,51 +239,37 @@ export default function Hero() {
             h="100px"
             p="2"
             borderRadius="2xl"
-            bg="gray.200"
+            bg="gray.100"
             position="absolute"
             left="0%"
             transform="auto"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
-            <Image src="/icon-python.svg" width={100} height={100} />
+            <Image src="/icon-aws.svg" width={100} height={100} />
           </Box>
           <Box
             w="100px"
             h="100px"
             p="2"
             borderRadius="2xl"
-            bg="gray.200"
+            bg="gray.700"
             position="absolute"
-            left="35%"
+            left="33%"
             transform="auto"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
-            <Image src="/icon-ts.svg" width={100} height={100} />
+            <Image src="/icon-node.svg" width={100} height={100} />
           </Box>
           <Box
             w="100px"
             h="100px"
             p="2"
             borderRadius="2xl"
-            bg="gray.600"
+            bg="gray.100"
             position="absolute"
-            left="70%"
-            transform="auto"
-            rotate="-8deg"
-            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
-          >
-            <Image src="/icon-js.svg" width={100} height={100} />
-          </Box>
-          <Box
-            w="100px"
-            h="100px"
-            p="2"
-            borderRadius="2xl"
-            bg="gray.200"
-            position="absolute"
-            left="105%"
+            left="67%"
             transform="auto"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
@@ -279,28 +281,70 @@ export default function Hero() {
             h="100px"
             p="2"
             borderRadius="2xl"
-            bg="gray.200"
+            bg="gray.800"
             position="absolute"
-            left="140%"
+            left="100%"
             transform="auto"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
-            <Image src="/icon-ts.svg" width={100} height={100} />
+            <Image src="/icon-docker.svg" width={100} height={100} />
           </Box>
           <Box
             w="100px"
             h="100px"
             p="2"
             borderRadius="2xl"
-            bg="gray.600"
+            bg="gray.100"
             position="absolute"
-            left="175%"
+            left="133%"
             transform="auto"
             rotate="-8deg"
             boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
           >
-            <Image src="/icon-js.svg" width={100} height={100} />
+            <Image src="/icon-aws.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.700"
+            position="absolute"
+            left="166%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-node.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.100"
+            position="absolute"
+            left="200%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-python.svg" width={100} height={100} />
+          </Box>
+          <Box
+            w="100px"
+            h="100px"
+            p="2"
+            borderRadius="2xl"
+            bg="gray.800"
+            position="absolute"
+            left="233%"
+            transform="auto"
+            rotate="-8deg"
+            boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
+          >
+            <Image src="/icon-docker.svg" width={100} height={100} />
           </Box>
         </Flex>
         {/* <Image src="/icon-python.svg" width={100} height={100} /> */}

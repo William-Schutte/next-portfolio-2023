@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 
 import Section from "./components/Section";
 import NavSection from "./components/NavSection";
-import Hero from "./components/Hero";
+import Hero from "./components/HeroSection/Hero";
 import Intro from "./components/Intro";
 import Experience from "./components/Experience";
 import ExperienceItem1 from "./components/ExperienceItem1";

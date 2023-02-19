@@ -8,7 +8,7 @@
 			<animate attributeName="stop-color" values="#1b89e7; #7A5FFF; #1b89e7" dur="5s" repeatCount="indefinite"></animate>
 		</stop>
 		<animateTransform attributeName="gradientTransform" type="rotate" from="0 .5 .5" to="360 .5 .5"
-      dur="10s" repeatCount="indefinite" />
+      dur="8s" repeatCount="indefinite" />
   </linearGradient> 
 </defs>
 
