@@ -5,6 +5,7 @@ import {
   Image as ChakraImage,
   Text,
   keyframes,
+  useColorMode,
 } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -36,21 +37,28 @@ export default function Hero() {
   const translateAnimate = `${translateX} infinite 12s linear`;
   const translateAnimateRev = `${translateXRev} infinite 15s linear`;
 
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Flex my="24" px="4" justifyContent="space-between">
       <Box>
-        <Text textStyle="lgHeading">Prepare to be</Text>
+        <Text textStyle="lgHeading">
+          {colorMode === "light" ? "Your next" : "Prepare to be"}
+        </Text>
         <Text
           textStyle="lgHeading"
-          fontSize="6xl"
+          fontSize="7xl"
           bgGradient="linear(to-l, #7928CA, #FF0080)"
           bgClip="text"
+          transition="2s"
         >
-          mildly impressed
+          {colorMode === "light" ? "rockstar developer" : "mildly impressed"}
         </Text>
         <Box maxW="560px" my="8">
           <Text display="inline" textStyle="subHeading">
-            Get to know the most{" "}
+            {colorMode === "light"
+              ? "An extremely passionate and "
+              : "Get to know the most "}
           </Text>
           <Text
             display="inline"
@@ -59,10 +67,14 @@ export default function Hero() {
             textStyle="subHeading"
             fontWeight="bold"
           >
-            adequate full-stack developer{" "}
+            {colorMode === "light"
+              ? "versatile full-stack developer"
+              : "adequate full-stack developer"}{" "}
           </Text>
           <Text display="inline" textStyle="subHeading">
-            you've never heard of through a generically realized modern website
+            {colorMode === "light"
+              ? "with years of experience engineering React applications for multiple startups."
+              : "you've never heard of through a generically realized modern website"}
           </Text>
         </Box>
         <Button
@@ -93,7 +105,9 @@ export default function Hero() {
           ))}
         </Flex>
         <Text display="inline" fontSize="12" fontWeight="500">
-          Literally over 300 LinkedIn connections, how could he not be great?
+          {colorMode === "light"
+            ? "Hear what my colleageus are saying, ask a reference today!"
+            : "Literally over 300 LinkedIn connections, how could he not be great?"}
         </Text>
       </Box>
       <Flex

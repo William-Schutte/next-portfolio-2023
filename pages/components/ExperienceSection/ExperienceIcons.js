@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ExperienceIcons() {
   return (
-    <Center my="14" w="100%" h="100px" gap="8" flexWrap="wrap">
+    <Center my="14" px="8" w="100%" gap="8" flexWrap="wrap">
       <Box>
         <Box
           w="100px"
@@ -15,10 +15,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-react.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           React
         </Text>
-        <Text textAlign="center">Expert</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Expert
+        </Text>
       </Box>
       <Box>
         <Box
@@ -31,10 +33,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-ts.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           TypeScript
         </Text>
-        <Text textAlign="center">Professional</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Professional
+        </Text>
       </Box>
       <Box>
         <Box
@@ -47,10 +51,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-chakra.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           Chakra
         </Text>
-        <Text textAlign="center">Implementer</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Implementer
+        </Text>
       </Box>
       <Box>
         <Box
@@ -63,10 +69,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-js.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           JavaScript
         </Text>
-        <Text textAlign="center">Expert</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Expert
+        </Text>
       </Box>
       <Box>
         <Box
@@ -79,10 +87,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-aws.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           AWS
         </Text>
-        <Text textAlign="center">Practitioner</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Practitioner
+        </Text>
       </Box>
       <Box>
         <Box
@@ -95,10 +105,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-node.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           Node
         </Text>
-        <Text textAlign="center">Developer</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Developer
+        </Text>
       </Box>
       <Box>
         <Box
@@ -111,10 +123,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-python.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           Python
         </Text>
-        <Text textAlign="center">Developer</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Developer
+        </Text>
       </Box>
       <Box>
         <Box
@@ -127,10 +141,12 @@ export default function ExperienceIcons() {
         >
           <Image src="/icon-docker.svg" width={100} height={100} />
         </Box>
-        <Text mt="6" textAlign="center">
+        <Text mt="8" textAlign="center" textStyle="mediumText">
           Docker
         </Text>
-        <Text textAlign="center">Implementer</Text>
+        <Text textAlign="center" textStyle="mediumText">
+          Implementer
+        </Text>
       </Box>
     </Center>
   );

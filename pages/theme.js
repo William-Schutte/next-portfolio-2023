@@ -8,7 +8,7 @@ export const theme = extendTheme({
   },
   textStyles: {
     lgHeading: {
-      fontSize: "5xl",
+      fontSize: "6xl",
       lineHeight: "1.2",
       fontWeight: "bold",
     },
@@ -17,6 +17,9 @@ export const theme = extendTheme({
       lineHeight: "1.4",
       fontWeight: "400",
       letterSpacing: 1,
+    },
+    mediumText: {
+      fontSize: "lg",
     },
   },
 });

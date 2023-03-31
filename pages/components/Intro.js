@@ -7,10 +7,13 @@ import {
   Flex,
   Image,
   Text,
+  useColorMode,
 } from "@chakra-ui/react";
 
 export default function Intro() {
   const [scrollPosition, setScrollPosition] = useState(80);
+  const { colorMode, toggleColorMode } = useColorMode();
+
   const handleScroll = () => {
     const position = window.pageYOffset;
 
@@ -41,13 +44,8 @@ export default function Intro() {
         zIndex={-1}
       ></Box>
       <Box>
-        <Text
-          textStyle="lgHeading"
-          fontSize="6xl"
-          display="inline-block"
-          mr="4"
-        >
-          Temper
+        <Text textStyle="lgHeading" display="inline-block" mr="4">
+          {colorMode === "light" ? "Great" : "Temper"}
         </Text>
         <Text
           textStyle="lgHeading"

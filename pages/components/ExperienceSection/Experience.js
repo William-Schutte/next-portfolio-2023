@@ -1,22 +1,17 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
 import ExperienceIcons from "./ExperienceIcons";
 
 export default function Experience() {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Flex mt="24" px="4" justifyContent="space-between">
       <Box w="100%">
-        <Text textStyle="lgHeading" fontSize="6xl">
-          Full
-        </Text>
-        <Text textStyle="lgHeading" fontSize="6xl">
-          Stack
-        </Text>
-        <Text textStyle="lgHeading" fontSize="6xl">
-          Experience,
-        </Text>
+        <Text textStyle="lgHeading">Full</Text>
+        <Text textStyle="lgHeading">Stack</Text>
+        <Text textStyle="lgHeading">Experience,</Text>
         <Text
           textStyle="lgHeading"
-          fontSize="6xl"
           bgGradient="linear(to-l, #7928CA, #FF0080)"
           bgClip="text"
         >
@@ -24,7 +19,9 @@ export default function Experience() {
         </Text>
         <Box maxW="560px" my="8">
           <Text display="inline" textStyle="subHeading">
-            What does that actually mean? No one cares. Its all about the{" "}
+            {colorMode === "light"
+              ? "Modern experience with design oriented frontend"
+              : "What does that actually mean? No one cares. Its all about the"}{" "}
           </Text>
           <Text
             display="inline"
@@ -33,10 +30,12 @@ export default function Experience() {
             textStyle="subHeading"
             fontWeight="bold"
           >
-            buzz words{" "}
+            {colorMode === "light" ? "frameworks" : "buzz words"}
           </Text>
           <Text display="inline" textStyle="subHeading">
-            and overly colorful presentation.
+            {colorMode === "light"
+              ? ", REST API development, and engineer-focused software."
+              : ", giant fonts, and overly colorful gradients."}{" "}
           </Text>
         </Box>
         <ExperienceIcons />
