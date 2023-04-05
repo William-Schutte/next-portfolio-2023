@@ -12,6 +12,7 @@ import ExperienceItem2 from "./components/ExperienceSection/ExperienceItem2";
 import ExperienceItem3 from "./components/ExperienceSection/ExperienceItem3";
 import ExperienceItem4 from "./components/ExperienceSection/ExperienceItem4";
 import Contact from "./components/Contact";
+import Title from "./components/Title";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,8 +29,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Section>
-          <NavSection />
+        <NavSection />
+
+        <Section background>
+          <Title />
         </Section>
         <Section>
           <Hero />

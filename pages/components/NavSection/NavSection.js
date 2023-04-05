@@ -7,7 +7,16 @@ export default function NavSection() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex alignContent="space-between" position="static" top="10px">
+    <Flex
+      alignContent="space-between"
+      position="fixed"
+      w="100%"
+      px="40px"
+      shadow="sm"
+      bg={colorMode === "light" && "whiteAlpha.700"}
+      backdropFilter="saturate(20%) blur(6px)"
+      zIndex="100"
+    >
       <Flex py="4" mr="auto">
         <SunIcon boxSize="6" m="2" onClick={toggleColorMode} />
         <NavLink main>William Schutte</NavLink>
