@@ -2,6 +2,7 @@ import { Box, Flex, useColorMode } from "@chakra-ui/react";
 import { SunIcon } from "@chakra-ui/icons";
 
 import NavLink from "./NavLink";
+import ColorModeIcon from "../shared/ColorModeIcon";
 
 export default function NavSection() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -18,7 +19,7 @@ export default function NavSection() {
       zIndex="100"
     >
       <Flex py="4" mr="auto">
-        <SunIcon boxSize="6" m="2" onClick={toggleColorMode} />
+        <ColorModeIcon />
         <NavLink main>William Schutte</NavLink>
         <NavLink>Story</NavLink>
         <Box

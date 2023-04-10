@@ -1,6 +1,8 @@
 import { bluePurpleRedGradient, pinkPurpleGradient } from "@/styles/gradients";
 import { DeleteIcon, SunIcon } from "@chakra-ui/icons";
 import { Flex, Box, Text, useColorMode, Center } from "@chakra-ui/react";
+import ColorModeIcon from "./shared/ColorModeIcon";
+import AnimateText from "./shared/AnimateText";
 
 export default function Title() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -19,29 +21,16 @@ export default function Title() {
         {colorMode === "light" ? "william schutte" : '"william schutte"'}
       </Text>
       <Flex cursor="pointer" onClick={toggleColorMode} alignItems="center">
-        {colorMode === "light" ? (
-          <SunIcon boxSize="6" my="auto" mr="4" />
-        ) : (
-          <DeleteIcon boxSize="6" my="auto" mr="4" />
-        )}
+        <ColorModeIcon />
         <Text display="inline" textStyle="subHeading">
           Toggle between light mode and
         </Text>
-        <Text
-          display="inline"
-          textStyle="subHeading"
-          fontSize="2xl"
-          mx="2"
-          bgGradient={
-            colorMode === "light"
-              ? "linear(to-l, #1B89E7, #223D89)"
-              : pinkPurpleGradient
-          }
-          bgClip="text"
-          fontWeight="bold"
-        >
-          {colorMode === "light" ? "dark" : "sarcastic"}
-        </Text>
+        <AnimateText
+          lightText="dark"
+          darkText="sarcastic"
+          lightColor="linear(to-l, #1B89E7, #223D89)"
+          darkColor={pinkPurpleGradient}
+        />
         <Text display="inline" textStyle="subHeading">
           {" "}
           mode
