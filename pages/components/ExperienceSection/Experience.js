@@ -1,11 +1,12 @@
 import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
 import ExperienceIcons from "./ExperienceIcons";
+import { pinkPurpleGradient } from "@/styles/gradients";
 
 export default function Experience() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex mt="24" px="4" justifyContent="space-between">
+    <Flex mt="24" mb="24" px="4" justifyContent="space-between">
       <Box w="100%">
         <Text textStyle="lgHeading">Full</Text>
         <Text textStyle="lgHeading">Stack</Text>
@@ -25,7 +26,11 @@ export default function Experience() {
           </Text>
           <Text
             display="inline"
-            bgGradient="linear(to-l, #1B89E7, #223D89)"
+            bgGradient={
+              colorMode === "light"
+                ? "linear(to-l, #1B89E7, #223D89)"
+                : pinkPurpleGradient
+            }
             bgClip="text"
             textStyle="subHeading"
             fontWeight="bold"
@@ -38,7 +43,7 @@ export default function Experience() {
               : ", giant fonts, and overly colorful gradients."}{" "}
           </Text>
         </Box>
-        <ExperienceIcons />
+        {/* <ExperienceIcons /> */}
       </Box>
     </Flex>
   );

@@ -12,6 +12,7 @@ export default function AnimateText({
   const variants = {
     hidden: {
       opacity: 0,
+      height: "28px",
       width: 0,
       transition: { duration: 0.3 },
     },
@@ -24,7 +25,6 @@ export default function AnimateText({
         variants={variants}
         animate={colorMode === "light" ? "show" : "hidden"}
         style={{ overflow: "hidden" }}
-        // width="0"
       >
         <Text
           display="inline"
@@ -42,7 +42,6 @@ export default function AnimateText({
         variants={variants}
         animate={colorMode === "light" ? "hidden" : "show"}
         style={{ overflow: "hidden" }}
-        // width="0"
       >
         <Text
           display="inline"

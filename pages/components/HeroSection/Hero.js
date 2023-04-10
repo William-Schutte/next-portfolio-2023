@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 
+import { pinkPurpleGradient } from "@/styles/gradients";
+
 const userImageUrls = [
   "https://randomuser.me/api/portraits/women/0.jpg",
   "https://randomuser.me/api/portraits/men/0.jpg",
@@ -62,7 +64,11 @@ export default function Hero() {
           </Text>
           <Text
             display="inline"
-            bgGradient="linear(to-l, #1B89E7, #223D89)"
+            bgGradient={
+              colorMode === "light"
+                ? "linear(to-l, #1B89E7, #223D89)"
+                : pinkPurpleGradient
+            }
             bgClip="text"
             textStyle="subHeading"
             fontWeight="bold"

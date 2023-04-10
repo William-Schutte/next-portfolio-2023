@@ -1,4 +1,5 @@
 import { Box, Flex, Text, keyframes } from "@chakra-ui/react";
+import ImageSlider from "../shared/ImageSlider";
 
 const spin = keyframes`
 to {background-position: 200% 0;}
@@ -13,9 +14,12 @@ export default function ExperienceItem1() {
         mx="6"
         mt="12"
         borderRadius="2xl"
+        overflow="clip"
         bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
-      ></Box>
-      <Box maxW="560px" my="8" py="4">
+      >
+        <ImageSlider />
+      </Box>
+      <Box maxW="560px" my="4" py="4">
         <Text textStyle="lgHeading">Cove Tool</Text>
         <Text textStyle="lgHeading" fontSize="2xl" mb="4">
           Full Stack Software Engineer (2022 - Present)
