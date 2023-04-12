@@ -18,7 +18,7 @@ export default function Intro() {
     const position = window.pageYOffset;
 
     // 0 - 400 range, interpolate from 80 to 0
-    const positionInRange = Math.min(position, 800);
+    const positionInRange = Math.min(position - 1200, 800);
     const interpVal = 80 - (80 * positionInRange) / 800;
     setScrollPosition(interpVal);
   };
@@ -32,13 +32,13 @@ export default function Intro() {
   }, []);
 
   return (
-    <Center flexDir="column" my="240px">
+    <Center flexDir="column" my="240px" position="relative">
       <Box
         bg="linear-gradient(90deg, rgba(131, 58, 180, 0.7) 2.16%, rgba(253, 29, 29, 0.63) 132.3%),#D693FF;"
         position="absolute"
-        top="1800px"
+        top="200px"
         h="700px"
-        w="130%"
+        w="140%"
         transform={"auto"}
         rotate="12deg"
         zIndex={-1}
