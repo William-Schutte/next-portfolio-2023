@@ -1,8 +1,14 @@
 import { Box, Flex, Text, keyframes } from "@chakra-ui/react";
+import ImageSlider from "../shared/ImageSlider";
 
 const spin = keyframes`
 to {background-position: 200% 0;}
 `;
+const iterativeImages = [
+  "/iterative1.png",
+  "/iterative2.png",
+  "/iterative3.png",
+];
 
 export default function ExperienceItem3() {
   return (
@@ -13,8 +19,14 @@ export default function ExperienceItem3() {
         mx="6"
         mt="12"
         borderRadius="2xl"
+        overflow="clip"
         bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
-      ></Box>
+      >
+        <ImageSlider
+          imgArray={iterativeImages}
+          altText="Iterative AI Work Examples"
+        />
+      </Box>
       <Box maxW="560px" my="8" py="4">
         <Text textStyle="lgHeading">Iterative AI</Text>
         <Text textStyle="lgHeading" fontSize="2xl" mb="4">

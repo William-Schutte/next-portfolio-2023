@@ -1,9 +1,16 @@
 import { Box, Flex, Text, keyframes } from "@chakra-ui/react";
+import ImageSlider from "../shared/ImageSlider";
 
 const spin = keyframes`
 to {background-position: 200% 0;}
 `;
-
+const ofgImages = [
+  "/ofg1.png",
+  "/ofg2.png",
+  "/ofg3.png",
+  "/ofg4.png",
+  "/ofg5.png",
+];
 export default function ExperienceItem4() {
   return (
     <Flex mt="12" mb="32" px="4" justifyContent="space-between">
@@ -25,14 +32,14 @@ export default function ExperienceItem4() {
           Wordpress, HTML, CSS
         </Text>
         <Text textStyle="subHeading" mb="4" textAlign="justify">
-          At Conifer Point, a small startup in the computational chemistry
-          field, I was able to leverage my biochemistry background to develop
-          and optimize 3D drug discovery tools and personally help labs
-          searching for new active drug candidates.
+          Working remotely directly with the company owner and lead developer, I
+          learned a lot about the business and innerworkings of client-oriented
+          work and product excellence within a very short time. Before long, I
+          was managing content updates for WordPress sites and refactoring old,
+          outdated PHP pages into more maintainable HTML, CSS, and JS.
         </Text>
         <Text textStyle="subHeading" mb="4" fontStyle="italic">
-          TLDR: "Recursive compound decomposition, intramolecular bond rotation,
-          and Lennard-Jones potential simulation? No problem."
+          TLDR: "Intro to the world of web dev."
         </Text>
       </Box>
       <Box
@@ -41,8 +48,11 @@ export default function ExperienceItem4() {
         mx="6"
         mt="12"
         borderRadius="2xl"
+        overflow="clip"
         bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
-      ></Box>
+      >
+        <ImageSlider imgArray={ofgImages} altText="OFG Work Examples" right />
+      </Box>
     </Flex>
   );
 }

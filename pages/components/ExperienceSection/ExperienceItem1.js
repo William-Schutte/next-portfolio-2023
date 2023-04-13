@@ -4,6 +4,7 @@ import ImageSlider from "../shared/ImageSlider";
 const spin = keyframes`
 to {background-position: 200% 0;}
 `;
+const coveImages = ["/cove-1.png", "/cove-2.png", "/cove-3.png"];
 
 export default function ExperienceItem1() {
   return (
@@ -17,7 +18,7 @@ export default function ExperienceItem1() {
         overflow="clip"
         bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
       >
-        <ImageSlider />
+        <ImageSlider imgArray={coveImages} altText="Cove Tool Work Examples" />
       </Box>
       <Box maxW="560px" my="4" py="4">
         <Text textStyle="lgHeading">Cove Tool</Text>
