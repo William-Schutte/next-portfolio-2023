@@ -11,10 +11,19 @@ const bluePurpleRedGradient =
 const wheatGradient =
   "linear-gradient(112.9deg, #FFFAEE -0.14%, #FFF0EE 45.98%, #FFEEFC 100.47%);";
 
+const purpleGreenGradient = "linear-gradient(to right, #8360c3, #2ebf91)";
+
+const greenYellowGradient = "linear-gradient(to right, #00b09b, #96c93d)";
+
+const pinkRedGradient = "linear-gradient(25deg,#d64c7f,#ee4758 50%)";
+
 export {
   darkBlueGradient,
   pinkPurpleGradient,
   purpleSubtleGradient,
   bluePurpleRedGradient,
   wheatGradient,
+  purpleGreenGradient,
+  greenYellowGradient,
+  pinkRedGradient,
 };
