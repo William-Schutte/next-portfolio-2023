@@ -7,7 +7,7 @@ import NavSection from "./components/NavSection/NavSection";
 import Hero from "./components/HeroSection/Hero";
 import Intro from "./components/Intro";
 import Experience from "./components/ExperienceSection/Experience";
-import Contact from "./components/Contact";
+import Contact from "./components/ContactSection/Contact";
 import Title from "./components/Title";
 
 const inter = Inter({ subsets: ["latin"] });

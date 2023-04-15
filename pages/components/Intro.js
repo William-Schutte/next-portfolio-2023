@@ -76,9 +76,9 @@ export default function Intro() {
             title="Me"
             src="https://www.youtube.com/embed/46juu7rP3eg?autoplay=1"
             allowfullscreen
-            autoplay
+            autoPlay
             loop
-            playsinline
+            playsInline
           ></iframe>
         </AspectRatio>
       </Box>
