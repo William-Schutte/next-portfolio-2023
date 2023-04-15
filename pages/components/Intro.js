@@ -38,7 +38,7 @@ export default function Intro() {
         position="absolute"
         top="200px"
         h="700px"
-        w="140%"
+        w="140vw"
         transform={"auto"}
         rotate="12deg"
         zIndex={-1}

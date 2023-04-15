@@ -7,10 +7,6 @@ import NavSection from "./components/NavSection/NavSection";
 import Hero from "./components/HeroSection/Hero";
 import Intro from "./components/Intro";
 import Experience from "./components/ExperienceSection/Experience";
-import ExperienceItem1 from "./components/ExperienceSection/ExperienceItem1";
-import ExperienceItem2 from "./components/ExperienceSection/ExperienceItem2";
-import ExperienceItem3 from "./components/ExperienceSection/ExperienceItem3";
-import ExperienceItem4 from "./components/ExperienceSection/ExperienceItem4";
 import Contact from "./components/Contact";
 import Title from "./components/Title";
 
@@ -42,10 +38,6 @@ export default function Home() {
         </Section>
         <Section>
           <Experience />
-          <ExperienceItem1 />
-          <ExperienceItem2 />
-          <ExperienceItem3 />
-          <ExperienceItem4 />
         </Section>
         <Section background>
           <Contact />

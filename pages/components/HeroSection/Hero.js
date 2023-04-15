@@ -42,7 +42,7 @@ export default function Hero() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex my="24" px="4" justifyContent="space-between">
+    <Flex my="160px" px="4" justifyContent="space-between">
       <Box>
         <Text textStyle="lgHeading">
           {colorMode === "light" ? "Your next" : "Prepare to be"}
