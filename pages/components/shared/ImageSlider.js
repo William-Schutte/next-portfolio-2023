@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 
 const sources = ["/cove-1.png", "/cove-2.png", "/cove-3.png"];
 
-export default function ImageSlider({ imgArray, altText, right = false }) {
+export default function ImageSlider({ imgArray = [], altText, right = false }) {
   const [imgIndex, setImgIndex] = useState(0);
   const [timeoutID, setTimeoutID] = useState("");
 
