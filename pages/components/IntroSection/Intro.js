@@ -99,14 +99,15 @@ export default function Intro() {
                 opacity: 0.5,
               }}
             >
-              Let's Connect!
+              Let&apos;s Connect!
             </Button>
           </Link>
           <Flex>
             {userImageUrls.map((url, index) => (
-              <Box w="7" zIndex={10 - index}>
+              <Box w="7" zIndex={10 - index} key={url}>
                 <ChakraImage
                   src={url}
+                  alt="Misc LinkedIn Profile Pic"
                   borderRadius="50"
                   border="4px solid white"
                   h="12"
@@ -151,7 +152,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-react.svg" width={100} height={100} />
+              <Image
+                src="/icon-react.svg"
+                alt="React Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -165,7 +171,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-ts.svg" width={100} height={100} />
+              <Image
+                src="/icon-ts.svg"
+                alt="TypeScript Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -179,7 +190,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-chakra.svg" width={100} height={100} />
+              <Image
+                src="/icon-chakra.svg"
+                alt="ChakraUI Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -193,7 +209,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-js.svg" width={100} height={100} />
+              <Image
+                src="/icon-js.svg"
+                alt="JavaScript Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -207,7 +228,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-react.svg" width={100} height={100} />
+              <Image
+                src="/icon-react.svg"
+                alt="React Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -221,7 +247,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-ts.svg" width={100} height={100} />
+              <Image
+                src="/icon-ts.svg"
+                alt="TypeScript Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -235,7 +266,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-chakra.svg" width={100} height={100} />
+              <Image
+                src="/icon-chakra.svg"
+                alt="ChakraUI Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -249,7 +285,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-js.svg" width={100} height={100} />
+              <Image
+                src="/icon-js.svg"
+                alt="JavaScript Icon"
+                width={100}
+                height={100}
+              />
             </Box>
           </Flex>
 
@@ -271,7 +312,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-aws.svg" width={100} height={100} />
+              <Image
+                src="/icon-aws.svg"
+                alt="AWS Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -285,7 +331,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-node.svg" width={100} height={100} />
+              <Image
+                src="/icon-node.svg"
+                alt="Node Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -299,7 +350,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-python.svg" width={100} height={100} />
+              <Image
+                src="/icon-python.svg"
+                alt="Python Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -313,7 +369,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-docker.svg" width={100} height={100} />
+              <Image
+                src="/icon-docker.svg"
+                alt="Docker Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -327,7 +388,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-aws.svg" width={100} height={100} />
+              <Image
+                src="/icon-aws.svg"
+                alt="AWS Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -341,7 +407,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-node.svg" width={100} height={100} />
+              <Image
+                src="/icon-node.svg"
+                alt="Node Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -355,7 +426,12 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-python.svg" width={100} height={100} />
+              <Image
+                src="/icon-python.svg"
+                alt="Python Icon"
+                width={100}
+                height={100}
+              />
             </Box>
             <Box
               w="100px"
@@ -369,10 +445,14 @@ export default function Intro() {
               rotate="-8deg"
               boxShadow="0 24px 20px -12px rgba(40, 40, 40, .7)"
             >
-              <Image src="/icon-docker.svg" width={100} height={100} />
+              <Image
+                src="/icon-docker.svg"
+                alt="Docker Icon"
+                width={100}
+                height={100}
+              />
             </Box>
           </Flex>
-          {/* <Image src="/icon-python.svg" width={100} height={100} /> */}
         </Flex>
       </Flex>
     </>
