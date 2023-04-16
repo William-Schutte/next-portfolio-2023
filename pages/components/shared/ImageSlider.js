@@ -106,6 +106,11 @@ export default function ImageSlider({ imgArray, altText, right = false }) {
                 borderRadius="8px"
                 boxShadow="lg"
                 h="80vh"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  nextImage();
+                }}
+                cursor="pointer"
               />
             </Center>
           </ModalBody>

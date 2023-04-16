@@ -1,25 +1,10 @@
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Icon,
-  Link,
-  Text,
-  keyframes,
-  useColorMode,
-} from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Button, Flex, Link, Text, useColorMode } from "@chakra-ui/react";
 
 import {
-  bluePurpleRedGradient,
-  darkBlueGradient,
   greenYellowGradient,
   pinkPurpleGradient,
   pinkRedGradient,
   purpleGreenGradient,
-  purpleSubtleGradient,
-  wheatGradient,
 } from "@/styles/gradients";
 import ResumeCard from "./ResumeCard";
 import LinkedInCard from "./LinkedInCard";
@@ -29,7 +14,7 @@ export default function Hero() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex py="16" px="4" justifyContent="space-between" id="contact">
+    <Flex pt="20" pb="20" px="4" justifyContent="space-between" id="contact">
       <Box>
         <Text textStyle="lgHeading" w="80">
           {colorMode === "light"
@@ -201,6 +186,7 @@ export default function Hero() {
               w="100%"
               h="100%"
               display="flex"
+              _hover={{ textDecoration: "none" }}
               href="https://www.linkedin.com/in/william-schutte/"
               isExternal
             >
