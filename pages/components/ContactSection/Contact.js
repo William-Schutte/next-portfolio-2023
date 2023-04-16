@@ -29,7 +29,7 @@ export default function Hero() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex py="16" px="4" justifyContent="space-between">
+    <Flex py="16" px="4" justifyContent="space-between" id="contact">
       <Box>
         <Text textStyle="lgHeading" w="80">
           {colorMode === "light"
@@ -112,7 +112,7 @@ export default function Hero() {
           </Button>
         </a>
       </Box>
-      <Box position="relative" w="50%">
+      <Box position="relative" w="50%" mt="10">
         <Flex
           w="280px"
           h="360px"
@@ -124,7 +124,10 @@ export default function Hero() {
           borderRadius="2xl"
           overflow="hidden"
           transform="rotate(-5deg)"
-          backdropFilter="blur(8px)"
+          transition=".3s ease"
+          _hover={{
+            transform: "translateY(-20px) translateX(-10px) rotate(-9deg)",
+          }}
           bg={
             colorMode === "light"
               ? "whiteAlpha.800"
@@ -136,8 +139,12 @@ export default function Hero() {
             position="absolute"
             width="100%"
             height="100%"
-            bg="rgba(10,102,194,.5)"
-            backdropFilter="saturate(.7) blur(10px)"
+            bg={
+              colorMode === "light"
+                ? "rgba(250,250,250, .1)"
+                : "rgba(250,250,250, .2)"
+            }
+            backdropFilter="saturate(.8) blur(4px)"
             color="white"
             opacity="0"
             _hover={{ opacity: 1 }}
@@ -147,10 +154,11 @@ export default function Hero() {
               w="100%"
               h="100%"
               display="flex"
+              _hover={{ textDecoration: "none" }}
               href="/WS Resume.pdf"
               isExternal
             >
-              <Flex m="auto">
+              <Flex m="auto" color="blue.700">
                 <Text textStyle="lgHeading" fontSize="4xl">
                   Resume
                 </Text>
@@ -171,6 +179,10 @@ export default function Hero() {
           overflow="hidden"
           transform="rotate(3deg)"
           backdropFilter="blur(8px)"
+          transition=".3s ease"
+          _hover={{
+            transform: "translateY(-20px) translateX(30px) rotate(9deg)",
+          }}
           bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
         >
           <LinkedInCard />

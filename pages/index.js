@@ -4,13 +4,11 @@ import styles from "@/styles/Home.module.css";
 
 import Section from "./components/Section";
 import NavSection from "./components/NavSection/NavSection";
-import Hero from "./components/HeroSection/Hero";
-import Intro from "./components/Intro";
+import Story from "./components/Story";
 import Experience from "./components/ExperienceSection/Experience";
 import Contact from "./components/ContactSection/Contact";
-import Title from "./components/Title";
-
-const inter = Inter({ subsets: ["latin"] });
+import Hero from "./components/Hero";
+import Intro from "./components/IntroSection/Intro";
 
 export default function Home() {
   return (
@@ -28,13 +26,13 @@ export default function Home() {
         <NavSection />
 
         <Section background>
-          <Title />
-        </Section>
-        <Section>
           <Hero />
         </Section>
         <Section>
           <Intro />
+        </Section>
+        <Section>
+          <Story />
         </Section>
         <Section>
           <Experience />

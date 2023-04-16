@@ -29,19 +29,25 @@ export default function Experience() {
 
   return (
     <>
-      <Flex mt="24" mb="24" px="4" justifyContent="space-between">
+      <Box id="work" mb="20" h="1" />
+      <Flex mb="24" px="4" justifyContent="space-between">
         <Box w="100%">
-          <Text textStyle="lgHeading">Full</Text>
-          <Text textStyle="lgHeading">Stack</Text>
-          <Text textStyle="lgHeading">Experience,</Text>
+          <Text textStyle="lgHeading" fontSize="8xl" lineHeight="1">
+            Full Stack
+          </Text>
+          <Text textStyle="lgHeading" fontSize="8xl" lineHeight="1" ml="20">
+            Experience,
+          </Text>
           <Text
             textStyle="lgHeading"
             bgGradient="linear(to-l, #7928CA, #FF0080)"
             bgClip="text"
+            fontSize="8xl"
+            ml="40"
           >
             Engineered
           </Text>
-          <Box maxW="560px" my="8">
+          <Box maxW="560px" my="8" mx="auto">
             <Text display="inline" textStyle="subHeading">
               {colorMode === "light"
                 ? "Modern experience with design oriented frontend"

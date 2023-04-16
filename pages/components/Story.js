@@ -10,7 +10,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
-export default function Intro() {
+export default function Story() {
   const [scrollPosition, setScrollPosition] = useState(80);
   const { colorMode, toggleColorMode } = useColorMode();
 
@@ -18,7 +18,7 @@ export default function Intro() {
     const position = window.pageYOffset;
 
     // 0 - 400 range, interpolate from 80 to 0
-    const positionInRange = Math.min(position - 1200, 800);
+    const positionInRange = Math.min(position - 1000, 800);
     const interpVal = 80 - (80 * positionInRange) / 800;
     setScrollPosition(interpVal);
   };
@@ -36,20 +36,25 @@ export default function Intro() {
       <Box
         bg="linear-gradient(90deg, rgba(131, 58, 180, 0.7) 2.16%, rgba(253, 29, 29, 0.63) 132.3%),#D693FF;"
         position="absolute"
-        top="200px"
+        top="360px"
         h="700px"
         w="140vw"
         transform={"auto"}
-        rotate="12deg"
+        rotate="14deg"
         zIndex={-1}
       ></Box>
       <Box>
-        <Text textStyle="lgHeading" display="inline-block" mr="4">
+        <Text
+          textStyle="lgHeading"
+          fontSize="8xl"
+          display="inline-block"
+          mr="4"
+        >
           {colorMode === "light" ? "Great" : "Temper"}
         </Text>
         <Text
           textStyle="lgHeading"
-          fontSize="6xl"
+          fontSize="8xl"
           bgGradient="linear-gradient(to right, #12c2e9, #c471ed, #f64f59, #c471ed);"
           bgClip="text"
           display="inline-block"
@@ -57,7 +62,7 @@ export default function Intro() {
           expectations
         </Text>
       </Box>
-      <Text textStyle="lgHeading" fontSize="6xl">
+      <Text textStyle="lgHeading" fontSize="8xl">
         with William
       </Text>
 
@@ -69,7 +74,6 @@ export default function Intro() {
         bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
         perspective="90em"
         transform={`perspective(85em) rotateX(${scrollPosition}deg)`}
-        // rotateX={`${scrollPosition}deg`}
       >
         <AspectRatio maxWidth="1000px" mx="auto" ratio={16 / 9}>
           <iframe

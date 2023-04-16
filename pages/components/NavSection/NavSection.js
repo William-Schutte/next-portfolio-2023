@@ -20,8 +20,10 @@ export default function NavSection() {
     >
       <Flex py="4" mr="auto">
         <ColorModeIcon />
-        <NavLink main>William Schutte</NavLink>
-        <NavLink>Story</NavLink>
+        <NavLink main location="#hero">
+          William Schutte
+        </NavLink>
+        <NavLink location="#intro">Intro</NavLink>
         <Box
           w="1px"
           h="1.75em"
@@ -30,7 +32,7 @@ export default function NavSection() {
           borderRadius="4"
           alignSelf="center"
         />
-        <NavLink>Work</NavLink>
+        <NavLink location="#work">Work</NavLink>
         <Box
           w="1px"
           h="1.75em"
@@ -39,10 +41,12 @@ export default function NavSection() {
           borderRadius="4"
           alignSelf="center"
         />
-        <NavLink>Projects</NavLink>
+        <NavLink location="#contact">Contact</NavLink>
       </Flex>
       <Flex py="4">
-        <NavLink>Resume</NavLink>
+        <NavLink location="/WS Resume.pdf" isExternal>
+          Resume
+        </NavLink>
         <Box
           w="1px"
           h="1.75em"
@@ -51,7 +55,12 @@ export default function NavSection() {
           borderRadius="4"
           alignSelf="center"
         />
-        <NavLink>LinkedIn</NavLink>
+        <NavLink
+          location="https://www.linkedin.com/in/william-schutte/"
+          isExternal
+        >
+          LinkedIn
+        </NavLink>
       </Flex>
     </Flex>
   );

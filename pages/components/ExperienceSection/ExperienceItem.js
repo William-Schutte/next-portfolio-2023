@@ -34,6 +34,7 @@ export default function ExperienceItem({
         <ImageSlider
           imgArray={imagesList}
           altText={`${company} Work Examples`}
+          right={right}
         />
       </Box>
       <Box maxW="560px" my="4" py="4">
