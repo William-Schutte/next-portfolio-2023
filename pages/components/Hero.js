@@ -1,4 +1,8 @@
-import { bluePurpleRedGradient, pinkPurpleGradient } from "@/styles/gradients";
+import {
+  bluePurpleRedGradient,
+  pinkPurpleGradient,
+  wheatGradient,
+} from "@/styles/gradients";
 import { Flex, Link, Text, useColorMode, Center } from "@chakra-ui/react";
 import ColorModeIcon from "./shared/ColorModeIcon";
 import AnimateText from "./shared/AnimateText";
@@ -30,13 +34,23 @@ export default function Hero() {
       <Flex cursor="pointer" onClick={toggleColorMode} alignItems="center">
         <ColorModeIcon />
         <Text display="inline" textStyle="subHeading">
-          Toggle between light mode and
+          Toggle between
         </Text>
         <AnimateText
-          lightText="dark"
+          lightText="light"
+          darkText="light"
+          lightColor={pinkPurpleGradient}
+          darkColor={wheatGradient}
+        />
+        <Text display="inline" textStyle="subHeading">
+          mode and
+        </Text>
+        <AnimateText
+          lightText="sarcastic"
           darkText="sarcastic"
-          lightColor="linear(to-l, #1B89E7, #223D89)"
+          lightColor="linear(to-r, #000000, #674A36)"
           darkColor={pinkPurpleGradient}
+          reverseBold
         />
         <Text display="inline" textStyle="subHeading">
           {" "}

@@ -6,13 +6,15 @@ export default function AnimateText({
   darkText,
   lightColor,
   darkColor,
+  reverseBold = false,
 }) {
   const { colorMode, toggleColorMode } = useColorMode();
+  const isBold = reverseBold ? colorMode !== "light" : colorMode === "light";
 
   const variants = {
     hidden: {
       opacity: 0,
-      height: "28px",
+      height: "24px",
       width: 0,
       transition: { duration: 0.3 },
     },
@@ -29,11 +31,10 @@ export default function AnimateText({
         <Text
           display="inline"
           textStyle="subHeading"
-          fontSize="2xl"
           mx="2"
           bgGradient={lightColor}
           bgClip="text"
-          fontWeight="bold"
+          fontWeight={isBold ? "bold" : "regular"}
         >
           {lightText}
         </Text>
@@ -46,11 +47,10 @@ export default function AnimateText({
         <Text
           display="inline"
           textStyle="subHeading"
-          fontSize="2xl"
           mx="2"
           bgGradient={darkColor}
           bgClip="text"
-          fontWeight="bold"
+          fontWeight={isBold ? "bold" : "regular"}
         >
           {darkText}
         </Text>
