@@ -3,7 +3,15 @@ import ExperienceIcons from "./ExperienceIcons";
 import { pinkPurpleGradient } from "@/styles/gradients";
 import ExperienceItem from "./ExperienceItem";
 
-const coveImages = ["/cove-1.png", "/cove-2.png", "/cove-3.png"];
+const coveImages = [
+  "/cove-1.png",
+  "/cove-2.png",
+  "/cove-3.png",
+  "/cove-4.png",
+  "/cove-5.png",
+  "/cove-6.png",
+  "/cove-7.png",
+];
 const coniferImages = [
   "/bmaps1.png",
   "/bmaps2.png",

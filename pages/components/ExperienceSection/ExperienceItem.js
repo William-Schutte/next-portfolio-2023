@@ -22,21 +22,11 @@ export default function ExperienceItem({
       justifyContent="space-between"
       flexDirection={right ? "row-reverse" : "row"}
     >
-      <Box
-        w="500px"
-        h="500px"
-        mx="6"
-        mt="12"
-        borderRadius="2xl"
-        overflow="clip"
-        bg="linear-gradient(90deg, rgba(34, 61, 137, 0.72) 0%, rgba(27, 137, 231, 0.72) 100%),#E0E0E0;"
-      >
-        <ImageSlider
-          imgArray={imagesList}
-          altText={`${company} Work Examples`}
-          right={right}
-        />
-      </Box>
+      <ImageSlider
+        imgArray={imagesList}
+        altText={`${company} Work Examples`}
+        right={right}
+      />
       <Box maxW="560px" my="4" py="4">
         <Text textStyle="lgHeading">{company}</Text>
         <Text textStyle="lgHeading" fontSize="2xl" mb="4">
