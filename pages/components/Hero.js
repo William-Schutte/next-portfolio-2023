@@ -22,16 +22,26 @@ export default function Hero() {
     >
       <Text
         textStyle="lgHeading"
-        fontSize="9xl"
+        fontSize={["6xl", "8xl", "9xl"]}
         bgGradient={
           colorMode === "light" ? pinkPurpleGradient : bluePurpleRedGradient
         }
         bgClip="text"
         transition="2s"
+        px="8"
+        mb="4"
+        textAlign="center"
       >
-        {colorMode === "light" ? "william schutte" : '"william schutte"'}
+        {colorMode === "light" ? "_william schutte_" : '"william schutte"'}
       </Text>
-      <Flex cursor="pointer" onClick={toggleColorMode} alignItems="center">
+      <Flex
+        cursor="pointer"
+        onClick={toggleColorMode}
+        alignItems="center"
+        justifyContent="center"
+        flexWrap="wrap"
+        maxW={["330px", "330px", "350px", "600px"]}
+      >
         <ColorModeIcon />
         <Text display="inline" textStyle="subHeading">
           Toggle between

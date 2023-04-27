@@ -13,7 +13,7 @@ export const theme = extendTheme({
       fontWeight: "bold",
     },
     subHeading: {
-      fontSize: "xl",
+      fontSize: ["md", "lg", "xl"],
       lineHeight: "1.4",
       fontWeight: "400",
       letterSpacing: 1,
