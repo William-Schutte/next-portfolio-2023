@@ -78,7 +78,7 @@ export default function Story() {
         <AspectRatio maxWidth="1000px" mx="auto" ratio={16 / 9}>
           <iframe
             title="Me"
-            src="https://www.youtube.com/embed/46juu7rP3eg?autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/7AKBCNpDx1U?autoplay=1&mute=1"
             allowfullscreen
             autoPlay
             loop
